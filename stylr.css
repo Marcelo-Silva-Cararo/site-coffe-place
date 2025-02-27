@@ -1,0 +1,246 @@
+:root{
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+    font-size: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+section{
+    padding: 100px;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+.logo img{
+    border-radius: 40px;
+    width: 70px;
+    height: 70px;
+}
+.icons img{
+    padding: 20px;
+}
+.icons img:hover{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.header{
+     background-color: #000000af;
+    width: 100vw;
+    border: 2px solid rgb(44, 30, 30);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:99;
+    border-bottom: var(--border);
+}
+.header section{
+    width: 100vw;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a{
+    margin: 0 2rem;
+    font-size: 1.8rem;
+    color: aliceblue;
+    
+    
+}
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.btn{
+    background-color: #000000b6;
+    color: aliceblue;
+    padding:  1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.btn:hover{
+background-color: var(--main-color);
+transition: 2s;
+}
+.home-container{
+    background: url("espresso-surrounded-by-scattered-coffee-beans-dark-surface.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-container section{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content{
+max-width: 50rem;
+}
+
+.content h3{
+    color:aliceblue;
+    font-size: 5rem;
+}
+.content p{
+    color: aliceblue;
+    font-size:2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+.container-image img{
+    width: 750px;
+    height: 450px;
+}
+
+.title{
+    font-size: 4.5rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 45px;
+}
+
+.title span{
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.about .row{
+    display: flex;
+    max-width: 85%;
+    min-width: 70%;
+    align-items: center;
+    background-color: #0a0911;
+    gap: 1.5rem;
+}
+.about .row .content{
+    padding: 2rem;
+    
+    
+}
+.about .row .content h3{
+    font-size: 3rem;color: aliceblue;
+}
+.about .row .content p{
+    font-size: 1.6rem;
+    color: aliceblue;
+    padding: 1rem 0;
+    line-height: 2.5rem;
+}
+
+
+.menu .box img{
+    width: 180px;
+}
+.box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+}
+.box-container .box{
+    text-align: center;
+    border: 1px solid rgb(73, 70, 70);
+    padding: 7rem;
+    cursor: pointer;  
+}
+.menu .box-container .box:hover{
+    background-color: rgb(68, 67, 55);
+    transition: 0.7s;
+    
+}
+.box-container .box h3{
+    color: aliceblue;
+    font-size: 1.8rem;
+
+}
+.menu .box p{
+    color: aliceblue;
+    font-size: 1.8rem;
+}
+.menu .box-container .box .price{
+    color: aliceblue;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+    padding-left: 1rem; 
+}
+.review .box-container .box{
+    text-align: center;
+    padding: 7rem 0;
+   
+}
+
+.review .box-container .box p{
+    font-size: 1.4rem;
+    color: aliceblue;
+    padding: 1rem 5rem;
+    
+}
+.review .box-container .box .user{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.address{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+.footer{
+    
+    text-align: center;
+    border-top: 1px solid rgb(182, 180, 173);
+    margin-top: 50px;
+}  
+.footer .share{ 
+    padding: 4rem 0;
+}  
+.footer .share img{
+    margin: 0.6rem;
+    cursor: pointer;
+    padding: 3rem;
+    border-radius: 50%;
+    
+}
+.footer .share img:hover{
+    background-color: #d3ad7f;
+    transition: 1s;
+    
+}                                                                                                                              
